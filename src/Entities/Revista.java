@@ -18,8 +18,8 @@ public class Revista
      private ObjectId id;
     private String nombre;
     private String tipo;
-    private Date FechaInicio;
-    private Date FechaFin;
+    private String FechaInicio;
+    private String FechaFin;
     private String pais;
     private String LugCel;
     private String editorial;
@@ -27,7 +27,7 @@ public class Revista
     public Revista() {
     }
 
-    public Revista(String nombre, String tipo, Date FechaInicio, Date FechaFin, String pais, String LugCel, String editorial) {
+    public Revista(String nombre, String tipo, String FechaInicio, String FechaFin, String pais, String LugCel, String editorial) {
         this.nombre = nombre;
         this.tipo = tipo;
         this.FechaInicio = FechaInicio;
@@ -37,7 +37,7 @@ public class Revista
         this.editorial = editorial;
     }
 
-    public Revista(ObjectId id, String nombre, String tipo, Date FechaInicio, Date FechaFin, String pais, String LugCel, String editorial) {
+    public Revista(ObjectId id, String nombre, String tipo, String FechaInicio, String FechaFin, String pais, String LugCel, String editorial) {
         this.id = id;
         this.nombre = nombre;
         this.tipo = tipo;
@@ -72,19 +72,19 @@ public class Revista
         this.tipo = tipo;
     }
 
-    public Date getFechaInicio() {
+    public String getFechaInicio() {
         return FechaInicio;
     }
 
-    public void setFechaInicio(Date FechaInicio) {
+    public void setFechaInicio(String FechaInicio) {
         this.FechaInicio = FechaInicio;
     }
 
-    public Date getFechaFin() {
+    public String getFechaFin() {
         return FechaFin;
     }
 
-    public void setFechaFin(Date FechaFin) {
+    public void setFechaFin(String FechaFin) {
         this.FechaFin = FechaFin;
     }
 

@@ -16,6 +16,7 @@ public class Publicacion
 {
     private ObjectId id;
     private int numSec;
+    private String prof;
     private String titulo;
     private Revista revistas;
     private Congreso congresos;
@@ -28,9 +29,10 @@ public class Publicacion
         this.titulo = titulo;
     }
 
-    public Publicacion(ObjectId id, int numSec, String titulo) {
+    public Publicacion(ObjectId id, int numSec, String prof, String titulo) {
         this.id = id;
         this.numSec = numSec;
+        this.prof = prof;
         this.titulo = titulo;
     }
 
@@ -48,6 +50,14 @@ public class Publicacion
 
     public void setNumSec(int numSec) {
         this.numSec = numSec;
+    }
+
+    public String getProf() {
+        return prof;
+    }
+
+    public void setProf(String prof) {
+        this.prof = prof;
     }
 
     public String getTitulo() {
@@ -100,8 +110,7 @@ public class Publicacion
     }
 
     @Override
-    public String toString() 
-    {
-        return "publicacion{" + "id=" + id + ", numSec=" + numSec + ", titulo=" + titulo + '}';
+    public String toString() {
+        return "Publicacion{" + "id=" + id + ", numSec=" + numSec + ", prof=" + prof + ", titulo=" + titulo + '}';
     }
 }
