@@ -18,14 +18,14 @@ public class Profesor
     private String nombre;
     private String apellido;
     private String despacho;
-    private float telefono;
-    private float participaciones;
+    private int telefono;
+    private int participaciones;
     private String GradEstudios;
 
     public Profesor() {
     }
 
-    public Profesor(String nombre, String apellido, String despacho, float telefono, float participaciones, String GradEstudios) {
+    public Profesor(String nombre, String apellido, String despacho, int telefono, int participaciones, String GradEstudios) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.despacho = despacho;
@@ -34,7 +34,7 @@ public class Profesor
         this.GradEstudios = GradEstudios;
     }
 
-    public Profesor(ObjectId id, String nombre, String apellido, String despacho, float telefono, float participaciones, String GradEstudios) {
+    public Profesor(ObjectId id, String nombre, String apellido, String despacho, int telefono, int participaciones, String GradEstudios) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -84,19 +84,23 @@ public class Profesor
         this.despacho = despacho;
     }
 
-    public float getTelefono() {
+    public int getTelefono()
+    {
         return telefono;
     }
 
-    public void setTelefono(float telefono) {
+    public void setTelefono(int telefono)
+    {
         this.telefono = telefono;
     }
 
-    public float getParticipaciones() {
+    public int getParticipaciones() 
+    {
         return participaciones;
     }
 
-    public void setParticipaciones(float participaciones) {
+    public void setParticipaciones(int participaciones)
+    {
         this.participaciones = participaciones;
     }
 
