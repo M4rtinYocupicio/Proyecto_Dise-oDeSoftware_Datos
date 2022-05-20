@@ -18,8 +18,6 @@ public class Publicacion
     private String numSec;
     private String prof;
     private String titulo;
-    private Revista revistas;
-    private Congreso congresos;
 
     public Publicacion() {
     }
@@ -66,22 +64,6 @@ public class Publicacion
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
-    }
-
-    public Revista getRevistas() {
-        return revistas;
-    }
-
-    public void setRevistas(Revista revistas) {
-        this.revistas = revistas;
-    }
-
-    public Congreso getCongresos() {
-        return congresos;
-    }
-
-    public void setCongresos(Congreso congresos) {
-        this.congresos = congresos;
     }
 
     @Override
