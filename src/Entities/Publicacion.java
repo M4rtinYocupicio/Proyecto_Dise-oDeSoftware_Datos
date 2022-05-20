@@ -15,7 +15,7 @@ import org.bson.types.ObjectId;
 public class Publicacion 
 {
     private ObjectId id;
-    private int numSec;
+    private String numSec;
     private String prof;
     private String titulo;
     private Revista revistas;
@@ -24,12 +24,12 @@ public class Publicacion
     public Publicacion() {
     }
 
-    public Publicacion(int numSec, String titulo) {
+    public Publicacion(String numSec, String titulo) {
         this.numSec = numSec;
         this.titulo = titulo;
     }
 
-    public Publicacion(ObjectId id, int numSec, String prof, String titulo) {
+    public Publicacion(ObjectId id, String numSec, String prof, String titulo) {
         this.id = id;
         this.numSec = numSec;
         this.prof = prof;
@@ -44,11 +44,11 @@ public class Publicacion
         this.id = id;
     }
 
-    public int getNumSec() {
+    public String getNumSec() {
         return numSec;
     }
 
-    public void setNumSec(int numSec) {
+    public void setNumSec(String numSec) {
         this.numSec = numSec;
     }
 
