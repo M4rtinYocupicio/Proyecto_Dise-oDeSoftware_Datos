@@ -21,27 +21,31 @@ public class Proyecto
     private String acronimo;
     private String FechIn;
     private String FechFin;
+    private String Int;
     private float presupuesto;
 
     public Proyecto() {
     }
 
-    public Proyecto(String LinInv, String nombre, String acronimo, String FechIn, String FechFin, float presupuesto) {
+    public Proyecto(String LinInv, String nombre, String acronimo, String FechIn, String FechFin, String Int, float presupuesto) {
         this.LinInv = LinInv;
         this.nombre = nombre;
         this.acronimo = acronimo;
         this.FechIn = FechIn;
         this.FechFin = FechFin;
+        this.Int = Int;
         this.presupuesto = presupuesto;
     }
 
-    public Proyecto(ObjectId id, String LinInv, String nombre, String acronimo, String FechIn, String FechFin, float presupuesto) {
+    public Proyecto(ObjectId id, String LinInv, String nombre, String acronimo, String FechIn, String FechFin, String Int, float presupuesto) 
+    {
         this.id = id;
         this.LinInv = LinInv;
         this.nombre = nombre;
         this.acronimo = acronimo;
         this.FechIn = FechIn;
         this.FechFin = FechFin;
+        this.Int = Int;
         this.presupuesto = presupuesto;
     }
 
@@ -91,6 +95,14 @@ public class Proyecto
 
     public void setFechFin(String FechFin) {
         this.FechFin = FechFin;
+    }
+
+    public String getInt() {
+        return Int;
+    }
+
+    public void setInt(String Int) {
+        this.Int = Int;
     }
 
     public float getPresupuesto() {
