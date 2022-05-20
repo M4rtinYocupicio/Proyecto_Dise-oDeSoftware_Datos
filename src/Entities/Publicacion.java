@@ -18,6 +18,8 @@ public class Publicacion
     private String numSec;
     private String prof;
     private String titulo;
+    private Revista revista;
+    private Congreso congreso;
 
     public Publicacion() {
     }
@@ -33,6 +35,38 @@ public class Publicacion
         this.prof = prof;
         this.titulo = titulo;
     }
+
+    public Publicacion(ObjectId id, String numSec, String prof, String titulo, Revista revista) {
+        this.id = id;
+        this.numSec = numSec;
+        this.prof = prof;
+        this.titulo = titulo;
+        this.revista = revista;
+    }
+
+    public Publicacion(ObjectId id, String numSec, String prof, String titulo, Congreso congreso) {
+        this.id = id;
+        this.numSec = numSec;
+        this.prof = prof;
+        this.titulo = titulo;
+        this.congreso = congreso;
+    }
+
+    public Publicacion(String numSec, String prof, String titulo, Revista revista) {
+        this.numSec = numSec;
+        this.prof = prof;
+        this.titulo = titulo;
+        this.revista = revista;
+    }
+
+    public Publicacion(String numSec, String prof, String titulo, Congreso congreso) {
+        this.numSec = numSec;
+        this.prof = prof;
+        this.titulo = titulo;
+        this.congreso = congreso;
+    }
+    
+    
 
     public ObjectId getId() {
         return id;
