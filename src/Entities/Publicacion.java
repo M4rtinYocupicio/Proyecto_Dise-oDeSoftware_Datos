@@ -100,6 +100,22 @@ public class Publicacion
         this.titulo = titulo;
     }
 
+    public Revista getRevista() {
+        return revista;
+    }
+
+    public void setRevista(Revista revista) {
+        this.revista = revista;
+    }
+
+    public Congreso getCongreso() {
+        return congreso;
+    }
+
+    public void setCongreso(Congreso congreso) {
+        this.congreso = congreso;
+    }
+
     @Override
     public int hashCode() {
         int hash = 7;
